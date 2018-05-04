@@ -180,6 +180,10 @@ let g:tex_flavor = 'latex'
 
 " }}}
 
+" OCaml {{{
+
+let &rtp = &rtp . ',' . substitute(system("opam config var share"), '\n\+$', '', '') . "/merlin/vim"
+
 " }}}
 
 " plugin settings {{{
