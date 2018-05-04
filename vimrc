@@ -16,6 +16,7 @@ Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'junegunn/vim-easy-align'
+Plug 'sbdchd/neoformat'
 " syntax
 Plug 'scrooloose/syntastic'
 " filetype plugins
