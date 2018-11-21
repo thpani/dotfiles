@@ -17,6 +17,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'junegunn/vim-easy-align'
 Plug 'sbdchd/neoformat'
+Plug 'chrisbra/Recover.vim'
 " syntax
 Plug 'scrooloose/syntastic'
 " filetype plugins
