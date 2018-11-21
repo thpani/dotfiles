@@ -1,8 +1,5 @@
 " vim: foldmethod=marker
 
-set splitright " split windows to right
-set cursorline " highlight cursor line
-
 " vim-plug {{{
 
 call plug#begin()
@@ -209,6 +206,11 @@ let g:vimtex_quickfix_latexlog = { 'overfull' : 0, 'underfull' : 0 }
 " }}}
 
 " }}}
+
+" UI settings {{{
+
+set splitright " split windows to right
+set cursorline " highlight cursor line
 
 " }}}
 
