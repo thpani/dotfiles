@@ -133,6 +133,10 @@ au BufWritePre * let &bex = '-' . strftime("%F.%H:%M") . '~'
 
 let mapleader=','
 
+" jj or jk to escape
+inoremap jj <esc>
+inoremap jk <esc>
+
 " <tab> jumps to match
 map <tab> %
 
