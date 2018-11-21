@@ -122,7 +122,7 @@ set undodir=~/.vim/undo/     " undo files
 set backup                       " keep backup file
 set undofile                     " persist undo
 " set backup filename before writing
-au BufWritePre * let &bex = '-' . strftime("%F.%H:%M") . '~'
+au BufWritePre * let &bex = '-' . strftime("%F.%H:%M:%S") . '~'
 
 " }}}
 
