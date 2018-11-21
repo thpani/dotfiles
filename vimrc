@@ -193,6 +193,8 @@ let g:tex_flavor = 'latex'
 " OCaml {{{
 
 let &rtp = &rtp . ',' . substitute(system("opam config var share"), '\n\+$', '', '') . "/merlin/vim"
+let g:syntastic_ocaml_checkers = ['merlin']
+autocmd FileType ocaml setlocal commentstring=(*%s*) foldmethod=marker
 
 " }}}
 
