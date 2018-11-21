@@ -40,6 +40,12 @@ endif
 set termguicolors
 " }}}
 
+" editing {{{
+
+set hidden " hide abandoned buffers instead of unloading
+
+" }}}
+
 " spacing and wrapping {{{
 
 set tabstop=2
