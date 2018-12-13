@@ -30,11 +30,7 @@ call plug#end()
 " }}}
 
 " color {{{
-if filereadable(expand("~/.vimrc_background"))
-  let base16colorspace=256  " Access colors present in 256 colorspace
-  source ~/.vimrc_background
-endif
-set termguicolors
+colorscheme base16-default-light
 " }}}
 
 " editing {{{
