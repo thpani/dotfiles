@@ -161,6 +161,7 @@ nnoremap <F7> :TagbarToggle<cr>
 " open files / buffers
 nnoremap <leader>n :vne<cr>
 nnoremap <leader>o :Files<cr>
+set pastetoggle=<leader>p
 " cd to current files dir
 nnoremap <leader>cd :cd %:p:h<cr>
 " ag and ag word under cursor
