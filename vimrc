@@ -213,7 +213,10 @@ let g:syntastic_python_checkers = ['flake8']
 
 let g:vimtex_view_method = 'skim'
 let g:vimtex_format_enabled = 1
-let g:vimtex_quickfix_latexlog = { 'overfull' : 0, 'underfull' : 0 }
+let g:vimtex_quickfix_ignore_filters = [
+    \ 'Overfull',
+    \ 'Underfull',
+    \]
 " }}}
 
 " }}}
