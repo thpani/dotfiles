@@ -13,8 +13,10 @@ Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'junegunn/vim-easy-align'
+Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'sbdchd/neoformat'
 Plug 'chrisbra/Recover.vim'
+Plug 'christoomey/vim-titlecase', { 'for': 'tex' }
 " distraction-free writing
 Plug 'junegunn/goyo.vim'
 " syntax
