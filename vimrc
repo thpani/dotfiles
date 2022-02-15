@@ -20,7 +20,7 @@ Plug 'junegunn/goyo.vim'
 " syntax
 Plug 'scrooloose/syntastic'
 " filetype plugins
-Plug 'lervag/vimtex', {'for': 'tex'}
+Plug 'lervag/vimtex', { 'for': 'tex' }
 " color
 Plug 'chriskempson/base16-vim'
 " fzf
