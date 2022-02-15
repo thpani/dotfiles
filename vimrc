@@ -48,6 +48,7 @@ set expandtab
 set wrap
 set textwidth=80
 set colorcolumn=+1 " colored column one behind last column
+set nojoinspaces   " don't insert 2 spaces after .!? after a join command
 
 " }}}
 
