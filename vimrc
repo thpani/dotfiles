@@ -46,7 +46,7 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 set wrap
-set textwidth=79
+set textwidth=80
 set colorcolumn=+1 " colored column one behind last column
 
 " }}}
