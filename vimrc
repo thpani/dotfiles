@@ -177,6 +177,8 @@ nnoremap <leader>ev <C-w>v:e $MYVIMRC<cr>
 nnoremap <leader>evb <C-w>v:e $MYVIMRC.bak<cr>
 nnoremap <leader>rv :source $MYVIMRC<cr>
 nnoremap <leader>ez <C-w>v:e ~/.zshrc<cr>
+" format
+nnoremap <leader>f :Neoformat<cr>
 
 " }}}
 
