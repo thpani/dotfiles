@@ -85,6 +85,7 @@ set statusline+=%#PmenuSel#
 set statusline+=%{StatuslineGit()}
 set statusline+=%#LineNr#
 set statusline+=\ %F
+set statusline+=\ %{&paste?'[paste]':''}
 set statusline+=\ %m%r%h%w
 set statusline+=%=
 set statusline+=%#warningmsg#
