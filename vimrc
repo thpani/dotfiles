@@ -17,6 +17,10 @@ Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'sbdchd/neoformat'
 Plug 'chrisbra/Recover.vim'
 Plug 'christoomey/vim-titlecase', { 'for': 'tex' }
+" windows
+Plug 'roman/golden-ratio'
+" git
+Plug 'airblade/vim-gitgutter'
 " distraction-free writing
 Plug 'junegunn/goyo.vim'
 " syntax
