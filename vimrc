@@ -24,7 +24,7 @@ Plug 'lervag/vimtex', {'for': 'tex'}
 " color
 Plug 'chriskempson/base16-vim'
 " fzf
-Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 call plug#end()
