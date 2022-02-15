@@ -27,6 +27,8 @@ Plug 'junegunn/goyo.vim'
 Plug 'scrooloose/syntastic'
 " filetype plugins
 Plug 'lervag/vimtex', { 'for': 'tex' }
+Plug 'google/yapf', { 'rtp': 'plugins/vim', 'for': 'python' }
+Plug 'bohlender/vim-smt2', { 'for': 'smt2' }
 " color
 Plug 'chriskempson/base16-vim'
 " fzf
