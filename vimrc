@@ -199,6 +199,14 @@ autocmd FileType ocaml setlocal commentstring=(*%s*) foldmethod=marker
 
 " }}}
 
+" Python {{{
+
+let g:syntastic_python_checkers = ['flake8']
+
+" }}}
+
+" }}}
+
 " plugin settings {{{
 
 " vimtex {{{
