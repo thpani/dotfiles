@@ -214,7 +214,7 @@ set cursorline " highlight cursor line
 
 " GUI settings {{{
 if has('gui_macvim')
-  set guifont=Menlo:h11
+  set guifont=SFMono-Regular:h12
 endif
 
 " set gui cursor blinking options
