@@ -15,6 +15,8 @@ Plug 'tpope/vim-commentary'
 Plug 'junegunn/vim-easy-align'
 Plug 'sbdchd/neoformat'
 Plug 'chrisbra/Recover.vim'
+" distraction-free writing
+Plug 'junegunn/goyo.vim'
 " syntax
 Plug 'scrooloose/syntastic'
 " filetype plugins
@@ -169,6 +171,8 @@ nnoremap <leader>a :Ag
 nnoremap <Leader>ag :Ag <C-R><C-W><cr>
 " terminal
 nnoremap <leader>t :vert term<cr>
+" goyo + asdf
+nnoremap <leader>w :Goyo<cr>
 " switch colorscheme
 nnoremap <leader>l :colorscheme base16-default-light<cr>
 nnoremap <leader>d :colorscheme base16-tomorrow-night<cr>
@@ -218,6 +222,44 @@ let g:vimtex_quickfix_ignore_filters = [
     \ 'Overfull',
     \ 'Underfull',
     \]
+
+" }}}
+
+" goyo {{{
+
+function! WordCount()
+   let s:old_status = v:statusmsg
+   let position = getpos(".")
+   exe ":silent normal g\<c-g>"
+   let stat = v:statusmsg
+   let s:word_count = 0
+   if stat != '--No lines in buffer--'
+     let s:word_count = str2nr(split(v:statusmsg)[11])
+     let v:statusmsg = s:old_status
+   end
+   call setpos('.', position)
+   return s:word_count 
+endfunction
+
+function! s:goyo_enter()
+  let s:old_font=&guifont
+  let s:old_statusline=&statusline
+  set guifont=SFMono-Regular:h16
+  set statusline=%#LineNr#%=%{WordCount()}
+  Limelight0.7
+  set nocursorline
+endfunction
+
+function! s:goyo_leave()
+  Limelight!
+  let &guifont=s:old_font
+  let &statusline=s:old_statusline
+  set cursorline
+endfunction
+
+autocmd! User GoyoEnter nested call <SID>goyo_enter()
+autocmd! User GoyoLeave nested call <SID>goyo_leave()
+
 " }}}
 
 " }}}
