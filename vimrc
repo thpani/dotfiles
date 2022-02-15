@@ -23,6 +23,7 @@ Plug 'roman/golden-ratio'
 Plug 'airblade/vim-gitgutter'
 " distraction-free writing
 Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
 " syntax
 Plug 'scrooloose/syntastic'
 " filetype plugins
