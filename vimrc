@@ -31,7 +31,7 @@ Plug 'lervag/vimtex', { 'for': 'tex' }
 Plug 'google/yapf', { 'rtp': 'plugins/vim', 'for': 'python' }
 Plug 'bohlender/vim-smt2', { 'for': 'smt2' }
 " color
-Plug 'chriskempson/base16-vim'
+Plug 'connorholyday/vim-snazzy'
 " fzf
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -41,7 +41,7 @@ call plug#end()
 " }}}
 
 " color {{{
-colorscheme base16-default-light
+colorscheme snazzy
 " }}}
 
 " editing {{{
