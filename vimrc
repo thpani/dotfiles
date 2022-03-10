@@ -30,6 +30,7 @@ Plug 'scrooloose/syntastic'
 Plug 'lervag/vimtex', { 'for': 'tex' }
 Plug 'google/yapf', { 'rtp': 'plugins/vim', 'for': 'python' }
 Plug 'bohlender/vim-smt2', { 'for': 'smt2' }
+Plug 'hwayne/tla.vim', { 'for': 'tla' }
 " color
 Plug 'connorholyday/vim-snazzy'
 " fzf
