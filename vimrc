@@ -7,7 +7,7 @@ call plug#begin()
 " utils
 Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 Plug 'easymotion/vim-easymotion'
-Plug 'ludovicchabant/vim-gutentags'
+" Plug 'ludovicchabant/vim-gutentags'
 Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
 " editing
 Plug 'tpope/vim-surround'
