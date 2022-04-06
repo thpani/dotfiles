@@ -84,12 +84,12 @@ set wildmenu " show command-line completion
 
 set laststatus=2 " show status line for any number of windows
 
-function! GitBranch()
+function GitBranch()
   silent let l:branch = system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
   return l:branch
 endfunction
 
-function! StatuslineGit()
+function StatuslineGit()
   let l:branchname = GitBranch()
   return strlen(l:branchname) > 0?'  '.l:branchname.' ':''
 endfunction
