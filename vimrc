@@ -288,11 +288,6 @@ if has('gui_macvim')
   set guifont=FiraCodeNerdFontCompleteM-Regular:h12
 endif
 
-if $TERM == 'xterm-kitty'
-  set term=builtin_xterm
-endif
-
-
 " set gui cursor blinking options
 set guicursor+=n-v-c:blinkon0
 set guicursor+=i:blinkon0-ver25-Cursor/lCursor
