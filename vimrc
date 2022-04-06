@@ -85,7 +85,8 @@ set wildmenu " show command-line completion
 set laststatus=2 " show status line for any number of windows
 
 function! GitBranch()
-  return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
+  silent let l:branch = system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
+  return l:branch
 endfunction
 
 function! StatuslineGit()
