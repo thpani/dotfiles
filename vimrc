@@ -285,7 +285,7 @@ set cursorline " highlight cursor line
 
 " GUI settings {{{
 if has('gui_macvim')
-  set guifont=Menlo-Regular:h12
+  set guifont=FiraCodeNerdFontCompleteM-Regular:h12
 endif
 
 if $TERM == 'xterm-kitty'
