@@ -1,5 +1,12 @@
 " vim: foldmethod=marker
 
+if filereadable(expand("~/src/quint/editor-plugins/vim/quint.vim"))
+  augroup syntax
+  au! BufNewFile,BufReadPost *.qnt
+  au  BufNewFile,BufReadPost *.qnt so ~/src/quint/editor-plugins/vim/quint.vim
+  augroup END
+endif
+
 " vim-plug {{{
 
 call plug#begin()
