@@ -34,6 +34,7 @@ Plug 'junegunn/limelight.vim'
 " syntax
 Plug 'scrooloose/syntastic'
 " filetype plugins
+Plug 'hashivim/vim-terraform', { 'for': 'tf' }
 Plug 'lervag/vimtex', { 'for': 'tex' }
 Plug 'google/yapf', { 'rtp': 'plugins/vim', 'for': 'python' }
 Plug 'bohlender/vim-smt2', { 'for': 'smt2' }
