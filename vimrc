@@ -226,6 +226,12 @@ autocmd FileType ocaml setlocal commentstring=(*%s*) foldmethod=marker
 " Python {{{
 
 let g:syntastic_python_checkers = ['flake8']
+let g:neoformat_python_black = {
+      \ 'exe': 'black',
+      \ 'stdin': 1,
+      \ 'args': ['-S', '-q', '-'],
+      \ }
+let g:neoformat_enabled_python = ['black']
 
 " }}}
 
