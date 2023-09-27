@@ -1,0 +1,16 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* only needed once */
+
+/* leave icon for folders */
+#personal-bookmarks .bookmark-item .toolbarbutton-icon {
+ display: none !important;
+}
+
+/* unset browser tabs min height */
+#tabbrowser-tabs,
+#tabbrowser-arrowscrollbox,
+#tabbrowser-tabs[positionpinnedtabs] > #tabbrowser-arrowscrollbox > .tabbrowser-tab[pinned] {
+  min-height: 0px !important;
+}
+.tabbrowser-tab {
+  min-height: 0px !important;
+}
