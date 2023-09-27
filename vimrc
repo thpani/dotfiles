@@ -187,8 +187,8 @@ set pastetoggle=<leader>p
 " cd to current files dir
 nnoremap <leader>cd :cd %:p:h<cr>
 " ag and ag word under cursor
-nnoremap <leader>a :Ag 
-nnoremap <Leader>ag :Ag <C-R><C-W><cr>
+nnoremap <leader>a :Rg
+nnoremap <Leader>ag :Rg <C-R><C-W><cr>
 " terminal
 nnoremap <leader>t :vert term<cr>
 " goyo + asdf
