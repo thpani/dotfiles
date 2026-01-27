@@ -342,10 +342,10 @@ set cursorline " highlight cursor line
 
 " GUI settings {{{
 if has('gui_macvim')
-  set guifont=FiraCodeNerdFontCompleteM-Regular:h12
+  set guifont=FiraCode-Regular:h12
 endif
 
 " set gui cursor blinking options
 set guicursor+=n-v-c:blinkon0
 set guicursor+=i:blinkon0-ver25-Cursor/lCursor
-" }}}
+" }}
