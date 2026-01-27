@@ -1,15 +1,15 @@
 hs.hotkey.bind({"option"}, "space", function()
-  local app = hs.application.get("kitty")
+  local app = hs.application.get("ghostty")
   if app then
     if not app:mainWindow() then
-      app:selectMenuItem({"Shell", "New OS Window"})
+      app:selectMenuItem({"File", "New Window"})
     elseif app:isFrontmost() then
       app:hide()
     else
       app:activate()
     end
   else
-    hs.application.launchOrFocus("kitty")
+    hs.application.launchOrFocus("ghostty")
   end
 end)
 
