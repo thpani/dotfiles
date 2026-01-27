@@ -1,4 +1,4 @@
-hs.hotkey.bind({"option"}, "space", function()
+hs.hotkey.bind({"ctrl"}, "`", function()
   local app = hs.application.get("ghostty")
   if app then
     if not app:mainWindow() then
