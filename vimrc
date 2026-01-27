@@ -9,6 +9,8 @@ Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 Plug 'easymotion/vim-easymotion'
 " Plug 'ludovicchabant/vim-gutentags'
 Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
+" Copilot
+Plug 'github/copilot.vim'
 " editing
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
