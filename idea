@@ -1,6 +1,0 @@
-#!/bin/sh
-
-# IntelliJ IDEA launch script
-# https://www.jetbrains.com/help/idea/working-with-the-ide-features-from-command-line.html
-
-open -na "IntelliJ IDEA CE.app" --args "$@"
