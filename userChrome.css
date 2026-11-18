@@ -15,3 +15,11 @@
 .tabbrowser-tab {
   min-height: 0px !important;
 }
+
+/* installation:
+ * 1. go to your Firefox profile folder (about:support -> Profile Folder -> Open
+ * Folder)
+ * 2. create a folder named "chrome" if it doesn't exist
+ * 3. ln -s ~/dotfiles/firefox/userChrome.css chrome/userChrome.css
+ * 4. restart Firefox
+ */
