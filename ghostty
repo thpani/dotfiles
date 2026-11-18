@@ -4,6 +4,7 @@ keybind = shift+page_down=scroll_page_down
 keybind = shift+home=scroll_to_top
 keybind = shift+end=scroll_to_bottom
 copy-on-select = clipboard
+shell-integration-features = ssh-env,ssh-terminfo
 
 # This is the configuration file for Ghostty.
 #
