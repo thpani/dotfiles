@@ -1,4 +1,5 @@
-hs.hotkey.bind({"ctrl"}, "`", function()
+-- Toggle Ghostty with Ctrl + the top-left key below Esc
+local function toggleGhostty()
   local id = "com.mitchellh.ghostty"
   local app = hs.application.get(id)
   if not app then
@@ -14,7 +15,9 @@ hs.hotkey.bind({"ctrl"}, "`", function()
     app:unhide()
     app:activate()
   end
-end)
+end
+hs.hotkey.bind({"ctrl"}, 10, toggleGhostty) -- ISO: top-left §± key
+hs.hotkey.bind({"ctrl"}, "`", toggleGhostty) -- US: top-left `~ key
 
 -- DEBUG_TAP = false
 tap = hs.eventtap.new({hs.eventtap.event.types.systemDefined}, function(event)
