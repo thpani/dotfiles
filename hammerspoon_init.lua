@@ -1,15 +1,18 @@
 hs.hotkey.bind({"ctrl"}, "`", function()
-  local app = hs.application.get("com.mitchellh.ghostty")
-  if app then
-    if not app:mainWindow() then
-      app:selectMenuItem({"File", "New Window"})
-    elseif app:isFrontmost() then
-      app:hide()
-    else
-      app:activate()
-    end
+  local id = "com.mitchellh.ghostty"
+  local app = hs.application.get(id)
+  if not app then
+    hs.application.launchOrFocusByBundleID(id)
+    return
+  end
+  if app:isFrontmost() then
+    app:hide()
+  elseif #app:allWindows() == 0 then
+    app:activate()
+    app:selectMenuItem({"File", "New Window"})
   else
-    hs.application.launchOrFocusByBundleID("com.mitchellh.ghostty")
+    app:unhide()
+    app:activate()
   end
 end)
 
