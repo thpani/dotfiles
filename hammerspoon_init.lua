@@ -16,8 +16,7 @@ local function toggleGhostty()
     app:activate()
   end
 end
-hs.hotkey.bind({"ctrl"}, 10, toggleGhostty) -- ISO: top-left §± key
-hs.hotkey.bind({"ctrl"}, "`", toggleGhostty) -- US: top-left `~ key
+hs.hotkey.bind({"ctrl"}, "`", toggleGhostty)
 
 -- DEBUG_TAP = false
 tap = hs.eventtap.new({hs.eventtap.event.types.systemDefined}, function(event)
