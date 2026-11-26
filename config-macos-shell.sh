@@ -20,6 +20,9 @@ defaults write com.apple.dock persistent-others -array \
 defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock tilesize -int 38
 
+# Don't show suggested and recent apps in the Dock
+defaults write com.apple.dock show-recents -bool false
+
 killall Dock
 
 # Hide widgets on the desktop (System Settings > Desktop & Dock > Show Widgets)
