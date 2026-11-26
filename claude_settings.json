@@ -1,0 +1,9 @@
+{
+  "sandbox": {
+    "enabled": true,
+    "failIfUnavailable": true,
+    "allowUnsandboxedCommands": false
+  },
+  "theme": "auto",
+  "autoCompactEnabled": false
+}
